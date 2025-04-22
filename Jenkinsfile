@@ -5,7 +5,8 @@ pipeline{
             steps{
                 echo 'Welcome to first Declerative Pipeline';
                 sh 'whoami';
-                sh 'sudo apt update';
+                sh 'apt update && apt upgrade -y';
+                sh 'apt install sudo -y';
             }
         }
     }
