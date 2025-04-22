@@ -10,6 +10,8 @@ pipeline{
                 sh 'sudo apt install docker.io -y && apt install docker-compose -y';
                 sh 'docker --version';
                 sh 'docker-compose version';
+                sh 'docker image build -t oklabs/22april2025:v1 .';
+                sh 'docker image ls';
             }
         }
     }
